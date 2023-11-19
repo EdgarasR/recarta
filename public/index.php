@@ -101,7 +101,7 @@ require "../language_cfg.php" ?>
                     <br>
                     <h4><?php echo $texts[$language]['section_6_header_2'] ?></h4>
                     <br>
-                    <p><?php echo $texts[$language]['section_6_p_1'] ?></p>
+                    <p class="h5"><?php echo $texts[$language]['section_6_p_1'] ?></p>
                     <br>
                     <p class="h5"><?php echo $texts[$language]['section_6_p_2'] ?></p>
                     <br>
