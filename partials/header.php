@@ -1,14 +1,25 @@
+<?php 
+$current_page = ltrim($_SERVER['REQUEST_URI'], '/');
+?>
+
 <header class="text-center mt-2">
     <nav class="navbar navbar-light bg-light">
         <div class="nav">
-            <div class="col-md-6 text-left">
+            <div class="col-md-3 text-left">
                 <div>
                     <a class="navbar-brand" href="#">
                         <img src="/images/Keli-logo.avif" width="200" height="70" class="d-inline-block align-top" alt="">
                     </a>
                 </div>
             </div>
-            <div class="col-md-6 d-flex align-items-center justify-content-end">
+            <div class="col-md-6 d-flex align-items-end justify-content-center">
+                <ul class="nav-list">
+                    <li><b><a class="nav-links <?php echo $current_page === 'kneePain.php' ? 'active-tab' : '' ?>" href="kneePain.php">Knee pain</a></b></li>
+                    <li><b><a class="nav-links <?php echo $current_page === 'treatment.php' ? 'active-tab' : '' ?>" href="treatment.php">Treatment Options</a></b></li>
+                    <li><b><a class="nav-links <?php echo $current_page === 'recarta.php' ? 'active-tab' : '' ?>" href="recarta.php">About RECARTA</a></b></li>
+                </ul>
+            </div>
+            <div class="col-md-3 d-flex align-items-center justify-content-end">
                 <div class="dropdown">
                     <button class="btn btn-link dropdown-toggle" type="button" id="languageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <img class="flag-img" src="<?php echo $img_src ?>" alt="current-flag">

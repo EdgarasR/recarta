@@ -45,6 +45,14 @@ footer {
     margin-bottom: -20%;
 }
 
+.cropped-2 {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: -25%;
+    margin-bottom: -12%;
+}
+
 .image-container {
     position: relative;
     overflow: hidden;
@@ -109,4 +117,37 @@ footer {
 
 .btn-link.dropdown-toggle:hover .caret {
     border-top-color: black;
+}
+
+.custom-button {
+    background-color: #ffffff;
+    color: #67118d;
+    border: 3px solid #67118d;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-button:hover {
+    background-color: #67118d;
+    color: #ffffff;
+}
+
+.nav-list li {
+    display: inline;
+    margin-right: 50px;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-links:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.active-tab {
+    text-decoration: underline;
 }
