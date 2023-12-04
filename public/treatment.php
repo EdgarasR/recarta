@@ -1,5 +1,8 @@
-<?php require "translation/translation.php"; 
-require "../language_cfg.php" ?>
+<?php 
+session_start();
+require "translation/translation.php"; 
+require "language_cfg.php" 
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,7 +13,9 @@ require "../language_cfg.php" ?>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Red Hat Display" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-    <title><?php echo $texts[$language]['title'] ?></title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="js/scripts.js" defer></script>
+    <title><?php echo $texts[$_SESSION['language']]['title'] ?></title>
 </head>
 
 <body class="mx-auto">
@@ -53,7 +58,7 @@ require "../language_cfg.php" ?>
                     <br>
                     <p class="h5">This treatment has been shown to provide long-term cartilage regeneration, long-lasting pain relief and improve knee function.</p>
                     <br><br>
-                    <button type="button" class="custom-button">Learn More</button>
+                    <a href="recarta.php" class="custom-button">Learn More</a>
                 </div>
                 <div class="col-md-4">
                     <img src="images/treatment-1.avif" alt="treatment-1" class="img-fluid float-right">
@@ -87,16 +92,12 @@ require "../language_cfg.php" ?>
                     </ul>
                 </div>
             </div>
-            <svg height="5" width="100%" xmlns="http://www.w3.org/2000/svg">
-                <rect width="100%" height="100%" style="fill:#67118d;" />
-            </svg>
         </section>
 
     </main>
 
     <?php require __DIR__ . "/../partials/footer.php" ?>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 

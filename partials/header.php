@@ -7,7 +7,7 @@ $current_page = ltrim($_SERVER['REQUEST_URI'], '/');
         <div class="nav">
             <div class="col-md-3 text-left">
                 <div>
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="index.php">
                         <img src="/images/Keli-logo.avif" width="200" height="70" class="d-inline-block align-top" alt="">
                     </a>
                 </div>
@@ -26,10 +26,10 @@ $current_page = ltrim($_SERVER['REQUEST_URI'], '/');
                         <span class="caret"></span>
                     </button>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="languageDropdown">
-                        <a class="dropdown-item" href="?lang=en">
+                        <a class="dropdown-item <?php echo $_SESSION['language'] == 'en' ? 'language' : '' ?>" href="#" data-lang="en">
                             <img class="flag-img" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.1.5/flags/4x3/gb.svg" alt="en-flag"> <b>English (GB)</b>
                         </a>
-                        <a class="dropdown-item" href="?lang=lt">
+                        <a class="dropdown-item <?php echo $_SESSION['language'] == 'lt' ? 'language' : '' ?>" href="#" data-lang="lt">
                             <img class="flag-img" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.1.5/flags/4x3/lt.svg" alt="lt-flag"> <b>Lietuvių</b>
                         </a>
                     </div>

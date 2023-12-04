@@ -123,14 +123,16 @@ footer {
     background-color: #ffffff;
     color: #67118d;
     border: 3px solid #67118d;
-    padding: 10px 20px;
+    padding: 15px 20px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
 }
 
 .custom-button:hover {
     background-color: #67118d;
     color: #ffffff;
+    text-decoration: none;
 }
 
 .nav-list li {
@@ -150,4 +152,18 @@ footer {
 
 .active-tab {
     text-decoration: underline;
+}
+
+.signature-link, .signature-link:hover {
+    text-decoration: underline;
+    color: #67118d;
+    font-size: large;
+}
+
+.custom-h5 {
+    font-size: 18px;
+}
+
+.language, .language:hover {
+    background-color:darkseagreen;
 }
